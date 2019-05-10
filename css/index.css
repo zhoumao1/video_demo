@@ -1,0 +1,108 @@
+@import 'fonts.css';
+body {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+body section {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+body section .wrap {
+  width: 14rem;
+  height: 16rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  /*logo*/
+  /*搜索框*/
+  /*轮播图*/
+}
+body section .wrap .logo {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+body section .wrap .logo a {
+  display: block;
+  height: 3rem;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 3rem;
+  background: url(../img/logo.png) no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+body section .wrap .search {
+  width: 100%;
+  padding: .2rem .1rem;
+}
+body section .wrap .search form {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.8rem;
+  border: 1px solid #ffffff;
+  transition: 0.2s box-shadow;
+}
+body section .wrap .search form input.search-inp {
+  float: left;
+  box-sizing: border-box;
+  width: 76%;
+  height: 1.82222222rem;
+  font-size: 0.707407rem;
+  color: #fff;
+  background: #ff8d1b;
+  padding: 0.2962963rem 0.35555556rem;
+  border-radius: 0.8rem 0 0 0.8rem;
+}
+body section .wrap .search form button.search-btn {
+  float: left;
+  width: 24%;
+  height: 1.82222222rem;
+  background: #ff8d1b;
+  color: #fff;
+  font-size: 0.64740741rem;
+  border-radius: 0 0.8rem 0.8rem 0;
+}
+body section .wrap .banner-plate .carousel-wrap {
+  position: relative;
+}
+body section .wrap .banner-plate .carousel-wrap .list {
+  list-style: none;
+  overflow: hidden;
+  position: absolute;
+}
+body section .wrap .banner-plate .carousel-wrap .list li {
+  float: left;
+}
+body section .wrap .banner-plate .carousel-wrap .list li a {
+  display: block;
+}
+body section .wrap .banner-plate .carousel-wrap .list li a img {
+  display: block;
+  width: 100%;
+}
+body section .wrap .banner-plate .carousel-wrap .points-wrap {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  z-index: 1;
+}
+body section .wrap .banner-plate .carousel-wrap .points-wrap span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #fec;
+  background: #ccc;
+  margin-left: 5px;
+}
+body section .wrap .banner-plate .carousel-wrap .points-wrap span.active {
+  background: #4bc;
+}
