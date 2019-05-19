@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>index</title>
+	<link rel="stylesheet" href="../css/base.css">
+	<link rel="stylesheet" href="../css/index.css">
+	<script src="../js/adjust.js"></script>
+</head>
+<body>
+	<section>
+		<div class="wrap">
+			<div class="logo">
+				<a href="#"></a>
+			</div>
+			<!-- 搜索 -->
+			<div class="search clearfix">
+				<form class="clearfix search-form">
+					<input type="text" name="" id="" class="search-inp">
+					<button type="submit" class="search-btn">搜索</button>
+				</form>
+			</div>
+			<!-- banner -->
+			<div class="banner-plate plate">
+				<div class="carousel-wrap" needCarousel needAuto>
+					<div class="points-wrap"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+<script src="../js/carousel.js"></script>
+<script>
+	window.onload = function () {
+
+		var hrt = document.documentElement.clientHeight; //获取当前可视区域的高度存到hrt的变量里。
+		console.log(hrt);
+		document.body.style.height = hrt + 'px'
+		document.body.style.position = 'absolute'
+		// $('body').height(hrt+'px'); //把获取到的高度直接赋值给body
+		var searchForm = document.querySelector('.search-form');
+		/** @type {HTMLCanvasElement} */
+		var searchInp = document.querySelector('.search-inp');
+		searchInp.addEventListener('focus', function () {
+			searchForm.style.boxShadow = '0 0 6px 1px #fff';
+		})
+		searchInp.addEventListener('blur', function () {
+			searchForm.style.boxShadow = 'none';
+		})
+	}
+</script>
+</html>
