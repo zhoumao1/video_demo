@@ -7,6 +7,8 @@
 	<title>查询结果</title>
 	<link rel="stylesheet" href="../public/css/base.css">
 	<link rel="stylesheet" href="../public/css/search-list.css">
+	<script src="../public/js/jq.js"></script>
+	<script src="../public/js/underscore.js"></script>
 	<script src="../public/js/adjust.js"></script>
 </head>
 <body>
@@ -48,4 +50,30 @@
 		</ul>
 	</section>
 </body>
+<script type="text/html" id="video-temp">
+	<% $.each(data, function(k, v){ %>
+		<li>
+			<a href="" class="clearfix">
+				<div class="left-box">
+					<img src="<%= v.img_url[0] %>" alt="">
+				</div>
+				<div class="right-box">
+					<h1 class="video-title"><%= v.name %></h1>
+					<div class="cont">
+						<p class="p"><span class="le">分类：</span>
+							<span class="ri">
+								<%= v.lei_xing.substring(0,3) %>
+							</span>
+						</p>
+						<!-- <p class="p"><span class="le">类型：</span><span class="ri"><%= v.lei_xing %></span></p> -->
+						<p class="p"><span class="le">演员：</span><span class="ri"><%= v.zhu_yan %></span></p>
+						<p class="p pt"><span class="le">状态：</span><span class="ri">BD高清</span></p>
+						<p class="p"><span class="le">时间：</span><span class="ri"><%= v.update %></span></p>
+					</div>
+				</div>
+			</a>
+		</li>
+	<% }) %>
+</script>
+<script src="../public/js/search-list.js"></script>
 </html>

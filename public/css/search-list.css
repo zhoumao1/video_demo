@@ -41,7 +41,8 @@
 }
 .search-list .list-wrap li a .right-box {
   float: left;
-  margin-left: 0.27733333rem;
+  width: 8.53333333rem;
+  margin-left: 0.49066667rem;
 }
 .search-list .list-wrap li a .right-box .video-title {
   box-sizing: border-box;
@@ -59,11 +60,18 @@
 .search-list .list-wrap li a .right-box .cont .p {
   width: 100%;
 }
+.search-list .list-wrap li a .right-box .cont .p:nth-child(2) {
+  width: 8.32rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
 .search-list .list-wrap li a .right-box .cont .p .le {
   color: #3F4953;
 }
 .search-list .list-wrap li a .right-box .cont .p .ri {
   color: #7a8f25;
+  overflow: hidden;
 }
 .search-list .list-wrap li a .right-box .cont .pt {
   margin-top: 0.17066667rem;
