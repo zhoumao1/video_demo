@@ -53,7 +53,7 @@
 <script type="text/html" id="video-temp">
 	<% $.each(data, function(k, v){ %>
 		<li>
-			<a href="./play.html" class="clearfix">
+			<a href="./play.html?name=<%= v.name %>" class="clearfix">
 				<div class="left-box">
 					<img src="<%= v.img_url[0] %>" alt="">
 				</div>

@@ -5,8 +5,37 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>play</title>
+	<link rel="stylesheet" href="../public/css/base.css">
+	<link rel="stylesheet" href="../public/css/video.css">
+	<script src="../public/js/jq.js"></script>
+	<script src="https://cdn.jsdelivr.net/hls.js/latest/hls.min.js"></script>
 </head>
 <body>
-	
+	<nav class="head-nav">
+		<p class="video-name">XXX影片</p>
+	</nav>
+	<section>
+		<div class="video">
+			<video controls id="video"></video>
+		</div>
+		<!-- 反馈 -->
+		<div class="feedback">
+			<div class="feedback-l">
+				<span class="feedback-num">10</span>
+				顶一下
+			</div>
+			<div class="feedback-r">
+				<span class="feedback-num">10</span>
+				报错
+			</div>
+		</div>
+		<!-- 内容简介 -->
+		<div class="cont-jianj">
+			<p>《<span id="cont_jianj_name">XXX影片</span>》 内容简介</p>
+			<div class="cont-text" id="cont_jianj_text">ajdajsdalsjdlajsdlasjdalksjdalkjsdadjasl</div>
+		</div>
+	</section>
 </body>
+
+<script src="../public/js/video.js"></script>
 </html>

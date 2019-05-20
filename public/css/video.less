@@ -1,0 +1,83 @@
+@import './fonts.css';
+@rem: 750/16rem;
+body{
+	background: #EFF0F3;
+}
+// 导航
+.head-nav{
+	height: 93/@rem;
+	line-height: 93/@rem;
+	padding-left: 21/@rem;
+	background: #fff;
+	// margin-bottom: 39/@rem;
+	.video-name{
+		font-size: 39/@rem;
+		color: #3B4858;
+	}
+}
+// 视频内容
+section{
+	.video{
+		background: #fff;
+		width: 100%;
+		height: 440/@rem;
+		video{
+			height: 100%;
+		}
+	}
+	// 反馈
+	.feedback{
+		display: flex;
+		justify-content: space-evenly;
+		box-sizing: border-box;
+		background: #fff;
+		margin-bottom: 40/@rem;
+		.feedback-l{
+			text-align: center;
+			padding: 35/@rem 0;
+			&>span.feedback-num{
+				display: block;
+				color: #fff;
+				width: 80/@rem;
+				height: 80/@rem;
+				line-height: 80/@rem;
+				font-size: 26/@rem;
+				border-radius: 50%;
+				background: #3198f3;
+				margin-right: 20/@rem;
+			}
+		}
+		.feedback-r{
+			text-align: center;
+			padding: 35/@rem 0;
+			&>span.feedback-num{
+				display: block;
+				color: #fff;
+				width: 80/@rem;
+				height: 80/@rem;
+				line-height: 80/@rem;
+				font-size: 26/@rem;
+				border-radius: 50%;
+				background: #3198f3;
+				margin-right: 20/@rem;
+			}
+		}
+	}
+	// 内容简介
+	.cont-jianj{
+		background: #fff;
+		padding-left: 42/@rem;
+		color: #4C3A4A;
+		p{
+			height: 98/@rem;
+			line-height: 98/@rem;
+			font-size: 44/@rem;
+			border-bottom: 1px solid #f1f1f1;
+		}
+		.cont-text{
+			padding-top: 39/@rem;
+			font-size: 38/@rem;
+			text-indent: 60/@rem;
+		}
+	}
+}
