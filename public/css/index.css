@@ -62,6 +62,14 @@ body section .wrap .search form input.search-inp {
   padding: 0.42666667rem 0.512rem;
   border-radius: 1.152rem 0 0 1.152rem;
 }
+body section .wrap .search form input.search-inp::-webkit-input-placeholder {
+  /* placeholder颜色  */
+  color: #fbfbfbce;
+  /* placeholder字体大小  */
+  font-size: 12px;
+  /* placeholder位置  */
+  text-align: left;
+}
 body section .wrap .search form button.search-btn {
   float: left;
   width: 24%;
