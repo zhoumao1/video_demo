@@ -76,44 +76,37 @@ body{
 					}
 				}
 			}
-			/*轮播图*/
-			// .banner-plate{
-			// 	.carousel-wrap{
-			// 		position: relative;
-			// 		.list{
-			// 			list-style: none;
-			// 			overflow: hidden;
-			// 			position: absolute;
-			// 			li{
-			// 				float: left;
-			// 				a{
-			// 					display: block;
-			// 					img{
-			// 						display: block;
-			// 						width: 100%;
-			// 					}
-			// 				}
-			// 			}
-			// 		}
-			// 		.points-wrap{
-			// 			position: absolute;
-			// 			bottom: 0;
-			// 			text-align: center;
-			// 			z-index: 1;
-			// 			span{
-			// 				display: inline-block;
-			// 				width: 10px;
-			// 				height: 10px;
-			// 				border: 1px solid #fec;
-			// 				background: #ccc;
-			// 				margin-left: 5px;
-			// 				&.active{
-			// 					background: #4bc;
-			// 				}
-			// 			}
-			// 		}
-			// 	}
-			// }
+			/* 引导 */
+			.guide{
+				width: 7rem;
+				height: 2rem;
+				background: #ff8d1b;
+				position: relative;
+				border-radius: 50px;
+				margin: 2.4rem auto 0;
+				text-align: center;
+				line-height: 2rem;
+				font-size: 29/@rem;
+				transition: all .6s;
+				
+				// &::after{
+				// 	content: '';
+				// 	width:0;
+				// 	height:0;
+				// 	border-width:60/@rem 30/@rem 60/@rem 150/@rem;
+				// 	border-style:solid;
+				// 	border-color:transparent transparent transparent #222020;/*透明 灰 透明 透明 */
+				// 	position: absolute;
+				// 	top:-10/@rem;
+				// 	right: -160/@rem;
+				// }
+				.round{
+					display: block;
+					color: #fff;
+					width: 100%;
+					height: 100%;
+				}
+			}
 		}
 	}
 }

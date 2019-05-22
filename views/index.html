@@ -22,11 +22,9 @@
 					<button type="submit" class="search-btn">搜索</button>
 				</form>
 			</div>
-			<!-- banner -->
-			<div class="banner-plate plate">
-				<div class="carousel-wrap" needCarousel needAuto>
-					<div class="points-wrap"></div>
-				</div>
+			<!-- 引导 -->
+			<div class="guide">
+				<a href="#" class="round">更多火爆影视 --></a>
 			</div>
 		</div>
 	</section>
@@ -49,6 +47,17 @@
 		searchInp.addEventListener('blur', function () {
 			searchForm.style.boxShadow = 'none';
 		})
+
+		/** @type {HTMLCanvasElement} */
+		var guide_vfx = document.querySelector('.guide');
+		
+		var scale_flag = 1;
+		setInterval(function() {
+			scale_flag += 0.01
+			scale_flag > 1.4 ? scale_flag = 0.4 : false
+			guide_vfx.style.transform = `scale(${scale_flag})`
+		}, 100/60);
+		
 	}
 </script>
 </html>
