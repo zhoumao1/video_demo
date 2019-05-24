@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>分类</title>
+	<link rel="stylesheet" href="../public/css/base.css">
+	<link rel="stylesheet" href="../public/css/classification.css">
+	<script src="../public/js/jq.js"></script>
+	<script src="../public/js/underscore.js"></script>
+	<script src="../public/js/adjust.js"></script>
+</head>
+<body>
+	<header class="header clearfix">
+		<div class="back"><a href="./index.html">返回</a></div>
+		<!-- 搜索 -->
+		<div class="search clearfix">
+			<form class="clearfix search-form" action="./search-list.html">
+				<input type="text" name="" id="" class="search-inp" value="复仇者联盟4">
+				<button type="submit" class="search-btn">搜索</button>
+			</form>
+		</div>
+	</header>
+	<section class="wrap">
+		<!-- movie 板块 -->
+		<div class="plate movie-plate">
+			<header class="movie-head plate-head">
+				<a href="javascript:;" class="movie-t"><span>电影</span></a>
+				<a href="javascript:;" class="more-t"><span>更多</span></a>
+			</header>
+			<!-- 分类内容 -->
+			<section class="movie-wrap">
+				<!-- 标签 -->
+				<!-- 电影缩略图 -->
+				<div class="movie-thumbnail">
+					<ul class="movie-row clearfix" id="movie-row">
+						<li>
+							<a href="./video.html">
+								<img src="../public/img/index-thumbnail/aiqinggongyu.jpg" alt="一出好戏" class="thumbnail">
+								<h3 class="movie-title"><% v.name %></h3>
+								<p class="yanyuan"><%= v.zhu_yan %></p>
+							</a>
+						</li>
+						<li>
+							<a href="./video.html">
+								<img src="../public/img/index-thumbnail/aiqinggongyu.jpg" alt="一出好戏" class="thumbnail">
+								<h3 class="movie-title"><% v.name %></h3>
+								<p class="yanyuan"><%= v.zhu_yan %></p>
+							</a>
+						</li>
+						<li>
+							<a href="./video.html">
+								<img src="../public/img/index-thumbnail/aiqinggongyu.jpg" alt="一出好戏" class="thumbnail">
+								<h3 class="movie-title"><% v.name %></h3>
+								<p class="yanyuan"><%= v.zhu_yan %></p>
+							</a>
+						</li>
+						<li>
+							<a href="./video.html">
+								<img src="../public/img/index-thumbnail/aiqinggongyu.jpg" alt="一出好戏" class="thumbnail">
+								<h3 class="movie-title"><% v.name %></h3>
+								<p class="yanyuan"><%= v.zhu_yan %></p>
+							</a>
+						</li>
+						<li>
+							<a href="./video.html">
+								<img src="../public/img/index-thumbnail/aiqinggongyu.jpg" alt="一出好戏" class="thumbnail">
+								<h3 class="movie-title"><% v.name %></h3>
+								<p class="yanyuan"><%= v.zhu_yan %></p>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+		</div>
+	</section>
+</body>
+<script type="text/html" id="movie-temp">
+	<!-- row -->
+	<% $.each(data, function(k, v){ %>
+		<li>
+			<a href="./video.html">
+				<img src="<%= v.img_url[0] %>" alt="" class="thumbnail">
+				<h3 class="movie-title"><%= v.name %></h3>
+				<p class="yanyuan"><%= v.zhu_yan %></p>
+			</a>
+		</li>
+		
+	<% }) %>
+</script>
+<script src="../public/js/classification.js"></script>
+</html>
