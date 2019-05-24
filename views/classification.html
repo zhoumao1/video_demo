@@ -81,12 +81,11 @@
 	<% $.each(data, function(k, v){ %>
 		<li>
 			<a href="./video.html">
-				<img src="<%= v.img_url[0] %>" alt="" class="thumbnail">
+				<img data-src="<%= v.img_url[0] %>" alt="" class="thumbnail">
 				<h3 class="movie-title"><%= v.name %></h3>
 				<p class="yanyuan"><%= v.zhu_yan %></p>
 			</a>
 		</li>
-		
 	<% }) %>
 </script>
 <script src="../public/js/classification.js"></script>
