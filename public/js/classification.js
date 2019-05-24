@@ -18,17 +18,11 @@ $(function () {
 	})
 
 	function fn(arr) {
-		// var st = '';
-		// $.each(arr, function (index, value) {
-		// 	st += '<img datasrc=' + arr[index] + '>'
-		// })
-		// $('.content').html(st)
 
 		var tempCont = $('#movie-temp').html();
 		var htmlText = _.template(tempCont);
 		var NewHtml = htmlText({data: arr});
 		$("#movie-row").html(NewHtml);
-		
 
 		// var wap = $('.main');
 		var offTop = function (ele) {
@@ -84,7 +78,5 @@ $(function () {
 		})
 	}
 
-
-	
 	
 })
