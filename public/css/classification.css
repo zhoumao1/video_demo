@@ -183,6 +183,7 @@ body .search form button.search-btn {
   width: 100%;
   border-top-left-radius: .8rem;
   border-top-right-radius: .8rem;
+  background: url(../img/loading.gif) no-repeat center;
 }
 .wrap .movie-plate .movie-wrap .movie-thumbnail .movie-row > li > a h3 {
   font: 0.6rem sans-serif;
